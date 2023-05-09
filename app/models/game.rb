@@ -1,4 +1,6 @@
 class Game < ApplicationRecord
+  has_many :critics
+  
   validates :name, :genre, :price, :release_date, presence: true
   validates :genre,
             inclusion: { in: ["Simulator", "Adventure", "Strategy", "Role-playing (RPG)", "Shooter",
