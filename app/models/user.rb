@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :critics
+
   validates :username, :email, presence: true, uniqueness: true
   validates :username, length: { minimum: 6,
                                  too_short: "%<count>s characters is the minimum allowed" }
