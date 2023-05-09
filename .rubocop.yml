@@ -3,10 +3,10 @@ require: rubocop-rails
 AllCops:
   NewCops: enable
   Exclude:
-    - "db/**/*"
-    - "script/**/*"
-    - "bin/**/*"
-    - "node_modules/**/*"
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes

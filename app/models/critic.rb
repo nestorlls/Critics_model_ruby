@@ -4,5 +4,4 @@ class Critic < ApplicationRecord
 
   # Validates
   validates :title, :body, presence: { message: "can't be blank. Please write something!" }
-
 end
